@@ -1,0 +1,16 @@
+create table bankwithdetails(id varchar(20),name VARCHAR(20),amount int,events varchar(20),date date);
+
+ create table expensedetails(id varchar(20),name VARCHAR(20),amount int,events varchar(20),reason varchar(20),mode varchar(10),cheque/dd-no varchar(20),date date);
+
+create table bankdepodetails(id1 varchar(20),name1 varchar(20),amount1 int, events1 varchar(20),from1 varchar(20),mode1 varchar(10),chequedd_no1 varchar(20),date1 date);
+create table budgetinitialdetails(details varchar(30),amount int);
+create budgetitrix(details varchar(30),amount int);
+create budgetiplus(details varchar(30),amount int);
+create budgetothers(details varchar(30),amount int);
+create table amount(amount int ,initialamt int);
+
+
+
+<jsp:forward page="mail.jsp">
+	 <jsp:param name="name" value="<%=name%>"/>
+	  <jsp:param name="amt" value="<%=amount%>"/></jsp:forward>
